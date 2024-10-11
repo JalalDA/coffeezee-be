@@ -27,6 +27,11 @@ db.authenticate()
     console.log(`Error ${err}`);
   });
 
+  // Promos.sync().then(()=>console.log(`Success synchrone Promos`)).catch((err)=>console.log(err))
+  // Products.sync().then(()=>console.log(`Success synchrone Products`)).catch((err)=>console.log(err))
+  // Users.sync().then(()=>console.log(`Success synchrone User`)).catch((err)=>console.log(err))
+  // Transactions.sync().then(()=>console.log(`Success synchrone Transaction`)).catch((err)=>console.log(err))
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cloudinaryConfig)
